@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="../ikone/tab-icon.png">
+  <title>Sign up for GitHub · GitHub</title>
+  <link rel="stylesheet" href="../CSS/styles2.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../JS/script2.js"></script>
+</head>
+<body>
+  <!-- Leva stran z sliko -->
+  <div class="container">
+	  <div class="left-side">
+		<div class="left-content">
+		  <h1>Create your free account</h1>
+		  <p class="subtitle">Explore GitHub's core features for individuals and organizations.</p>
+		  <a href="#" class="link">See what's included ˅</a>
+		</div>
+		<img src="../slike/leva-stran.png" alt="GitHub illustration" class="background-img">
+	  </div>
+
+	  <!-- Desna stran z obrazcem -->
+	  <div class="right-side">
+		<div class="top-link">
+		  <p>Already have an account? <a href="../index.html">Sign in →</a></p>
+		</div>
+		
+		<div class="form-container">
+		  <h2>Sign up for GitHub</h2>
+		  
+		  <form action="#" method="post">
+			<!-- Gumbi za družbene prijave -->
+			<button type="button" class="social-btn">
+			  <img src="../ikone/google-icon.svg" alt="Google" class="icon">
+			  Continue with Google
+			</button>
+			<button type="button" class="social-btn">
+			  <img src="../ikone/apple-icon.svg" alt="Apple" class="icon">
+			  Continue with Apple
+			</button>
+
+			<!-- OR -->
+			<div class="or-text">or</div>
+
+			<!-- Email -->
+			<div class="form-group">
+			  <label for="email">Email*</label>
+			  <input type="email" id="email" name="email" placeholder="Email" required>
+			</div>
+
+			<!-- Geslo -->
+			<div class="form-group">
+			  <label for="password">Password*</label>
+			  <input type="password" id="password" name="password" placeholder="Password" required>
+			  <p class="small-text">Password should be at least 15 characters OR at least 8 characters including a number and a lowercase letter.</p>
+			</div>
+
+			<!-- Uporabniško ime -->
+			<div class="form-group">
+			  <label for="username">Username*</label>
+			  <input type="text" id="username" name="username" placeholder="Username" required>
+			  <p class="small-text">Username may only contain alphanumeric characters or single hyphens, and cannot begin or end with a hyphen.</p>
+			</div>
+
+			<!-- Država -->
+			<div class="form-group">
+			  <label for="country">Your Country/Region*</label>
+			  <select id="country" name="country" required>
+				    <option value="SI">Slovenia</option>
+					<option value="HR">Croatia</option>
+					<option value="AT">Austria</option>
+					<option value="IT">Italy</option>
+					<option value="DE">Germany</option>
+					<option value="FR">France</option>
+					<option value="ES">Spain</option>
+					<option value="PT">Portugal</option>
+					<option value="GB">United Kingdom</option>
+					<option value="IE">Ireland</option>
+					<option value="PL">Poland</option>
+					<option value="CZ">Czech Republic</option>
+					<option value="HU">Hungary</option>
+					<option value="SK">Slovakia</option>
+					<option value="SE">Sweden</option>
+					<option value="NO">Norway</option>
+					<option value="FI">Finland</option>
+					<option value="DK">Denmark</option>
+					<option value="NL">Netherlands</option>
+					<option value="BE">Belgium</option>
+					<option value="CH">Switzerland</option>
+					<option value="GR">Greece</option>
+					<option value="RO">Romania</option>
+					<option value="BG">Bulgaria</option>
+					<option value="RS">Serbia</option>
+					<option value="BA">Bosnia and Herzegovina</option>
+					<option value="ME">Montenegro</option>
+					<option value="MK">North Macedonia</option>
+					<option value="US">United States</option>
+					<option value="CA">Canada</option>
+					<option value="MX">Mexico</option>
+					<option value="BR">Brazil</option>
+					<option value="AR">Argentina</option>
+					<option value="CN">China</option>
+					<option value="JP">Japan</option>
+					<option value="KR">South Korea</option>
+					<option value="IN">India</option>
+					<option value="AU">Australia</option>
+					<option value="NZ">New Zealand</option>
+					<option value="ZA">South Africa</option>
+			  </select>
+			  <p class="small-text">For compliance reasons, we're required to collect country information to send you occasional updates and announcements.</p>
+			</div>
+
+			<!-- Potrditveno polje -->
+			<div class="checkbox-row">
+			  <label for="email-preferences">Email preferences</label>
+			  <input type="checkbox" id="email-pref" name="email-pref">
+			  <p>Receive occasional product updates and announcements</p>
+			</div>
+
+			<!-- Gumb za registracijo -->
+			<button type="submit" class="submit-btn">Create account ˃</button>
+
+			<!-- Pogoji -->
+			<p class="terms">
+			  By creating an account, you agree to the <a href="#">Terms of Service</a>. 
+			  For more information about GitHub's privacy practices, see the <a href="#">GitHub Privacy Statement</a>. 
+			  We'll occasionally send you account-related emails.
+			</p>
+		  </form>
+		</div>
+	  </div>
+  </div>
+</body>
+</html>

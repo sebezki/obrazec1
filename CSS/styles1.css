@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 48px;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 320px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logo {
+  width: 48px;
+  margin-bottom: 16px;
+}
+
+/* Tanjši naslov */
+h2 {
+  font-size: 20px;
+  color: #24292f;
+  font-weight: 500;
+}
+
+/* Polja */
+.form-group {
+  margin-bottom: 14px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 500;
+  color: #24292f;
+  display: block;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 14px;
+  height: 38px;
+}
+
+/* Fokus samo obroba */
+input:focus {
+  outline: none;
+  border-color: #0969da;
+}
+
+/* Label + forgot */
+.password-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.forgot-password {
+  font-size: 12px;
+  color: #0969da;
+  text-decoration: none;
+}
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Sign in gumb */
+.sign-in-btn {
+  display: block;
+  width: 100%;
+  height: 38px;
+  padding: 7px 12px;
+  background-color: #238636;
+  color: white;
+  border: 1px solid #238636;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.sign-in-btn:hover {
+  background-color: #2ea043;
+}
+
+/* OR tekst s črtami */
+.or-divider {
+  margin: 22px 0 16px;
+  display: flex;
+  align-items: center;
+  color: #6e7781;
+  font-size: 12px;
+}
+.or-divider::before,
+.or-divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid #d0d7de;
+  margin: 0 10px;
+}
+
+/* Gumbi za družbene prijave */
+.social-login {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-btn {
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.social-btn:hover {
+  background-color: #f0f1f3;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Povezave */
+.signup-link,
+.passkey-link {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.signup-link a,
+.passkey-link a {
+  color: #0969da;
+  text-decoration: none;
+}
+
+/* Passkey povezava bold */
+.passkey-link a {
+  font-weight: 500;
+}
+
+.signup-link a:hover,
+.passkey-link a:hover {
+  text-decoration: underline;
+}
