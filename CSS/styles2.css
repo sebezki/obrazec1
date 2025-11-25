@@ -1,0 +1,246 @@
+/* Osnovno - brez margina in paddinga */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+/* Leva stran */
+.left-side {
+  width: 50%;
+  min-height: 100vh; /* SPREMENJENO: iz height v min-height */
+  background-color: #0d1117;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 60px; /* SPREMENJENO: iz 80px */
+  overflow: hidden;
+}
+/* Tekstovni del */
+.left-content {
+  position: relative;
+  z-index: 2;
+  max-width: 420px;
+  color: white;
+  text-align: left;
+}
+/* Slika v ozadju */
+.background-img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  z-index: 1;
+}
+/* Naslov */
+.left-content h1 {
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+/* Podnaslov */
+.subtitle {
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+.link {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+/* Desna stran - bela */
+.right-side {
+  width: 50%;
+  margin-left: auto;
+  padding: 32px 48px 48px; /* SPREMENJENO: dodal padding-bottom */
+  background-color: white;
+  overflow-y: auto; /* DODANO: omogoči scroll samo desni strani */
+}
+.top-link {
+  text-align: right;
+  margin-bottom: 32px; /* SPREMENJENO: iz 40px */
+  font-size: 14px;
+}
+.top-link a {
+  color: #24292f;
+  font-weight: 500;
+}
+/* Obrazec */
+.form-container {
+  max-width: 440px;
+  margin: 0 auto;
+}
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #24292f;
+  margin-bottom: 20px; /* SPREMENJENO: iz 24px */
+}
+/* Gumbi za družbene prijave */
+.social-btn {
+  width: 100%;
+  background-color: #f6f8fa;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  padding: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.social-btn:hover {
+  background-color: #f0f1f3;
+}
+.icon {
+  width: 16px;
+  height: 16px;
+}
+/* OR tekst s črtami */
+.or-text {
+  text-align: center;
+  color: #6e7781;
+  font-size: 13px;
+  margin: 20px 0; /* SPREMENJENO: iz 24px */
+  position: relative;
+}
+.or-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: #d0d7de;
+}
+.or-text::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 45%;
+  height: 1px;
+  background-color: #d0d7de;
+}
+/* Polja */
+.form-group {
+  margin-bottom: 16px; /* SPREMENJENO: iz 20px */
+}
+label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #24292f;
+  display: block;
+  margin-bottom: 6px;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 14px;
+}
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #0969da;
+}
+.small-text {
+  font-size: 12px;
+  color: #6e7781;
+  margin-top: 6px;
+}
+/* Error sporočila */
+.error-message {
+  color: #cf222e;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Potrditveno polje */
+.checkbox-row {
+  margin-bottom: 16px;
+}
+
+.checkbox-row input {
+  width: 16px;
+  height: 16px;
+  vertical-align: top;
+  margin-right: 8px;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+.checkbox-row p {
+  font-size: 13px;
+  font-weight: normal;
+  display: inline;
+}
+
+/* Gumb za pošiljanje */
+.submit-btn {
+  width: 100%;
+  height: 50px;
+  padding: 10px 16px;
+  background-color: #1f1d19;
+  color: white;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+/* DODANO: Hover efekt */
+.submit-btn:hover {
+  background-color: #2d2b26;
+}
+/* Pogoji */
+.terms {
+  font-size: 12px;
+  color: #6e7781;
+  margin-top: 16px;
+  line-height: 1.5;
+}
+.terms a {
+  color: #0969da;
+}
+
+/* DODANO: Media query za manjše zaslone */
+@media (max-height: 900px) {
+  .left-side {
+    padding-top: 40px;
+  }
+  .left-content h1 {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+  .right-side {
+    padding: 24px 48px 32px;
+  }
+  h2 {
+    margin-bottom: 16px;
+  }
+  .form-group {
+    margin-bottom: 14px;
+  }
+}
